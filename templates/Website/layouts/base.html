@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MEMOYO - {% block title %}{% endblock %}</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
+
+	<link href="{% static 'assets/css/bootstrap.min.css' %}" id="bootstrap-style" rel="stylesheet" type="text/css" />
+	<link href="{% static 'assets/css/icons.min.css' %}" rel="stylesheet" type="text/css" />
+	<link href="{% static 'assets/css/app.min.css' %}" id="app-style" rel="stylesheet" type="text/css" />
+	<link href="{% static 'assets/libs/sweetalert2/sweetalert2.min.css' %}" rel="stylesheet" type="text/css" />
+
+	<!-- DataTables -->
+	<link href="{% static 'assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css' %}" rel="stylesheet" type="text/css" />
+	<link href="{% static 'assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css' %}" rel="stylesheet" type="text/css" />
+
+	<!-- Responsive datatable examples -->
+	<link href="{% static 'assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css' %}" rel="stylesheet" type="text/css" />
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/vue@next"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/reconnecting-websocket/1.0.0/reconnecting-websocket.js'></script>
+	
+	<style>
+		.error_class{
+			border: 1px solid red !important;
+		}
+		th.no-sorting, th.no-sorting:hover {
+			background-image: none !important;
+			cursor: default !important;
+		}
+		.custom_btn{
+			height: 25px;
+			padding-top: 2px;
+			border-radius: 5px;
+		}
+		.td_padding{
+			padding-top: 10px !important;
+			padding-bottom: 0px !important;
+		}
+	</style>
+	{% block customCDNS %}{% endblock %}
+
+	{% block customStyles %}{% endblock %}
+</head>
+<body data-sidebar="dark" data-layout-mode="light">
+	<div id="app"></div>
+	<div id="layout-wrapper">
+		{% include 'Website/layouts/header.html' %}
+		{% include 'Website/layouts/sidebar.html' %}
+		
+		<div class="main-content">
+			<div class="page-content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12">
+							<div class="page-title-box d-sm-flex align-items-center justify-content-between">
+								<h4 class="mb-sm-0 font-size-18">{% block pageTitle %}{% endblock %}</h4>
+								<!-- page content -->
+								<div class="page-title-right">
+									{% block pageTitleRight %}{% endblock %}
+								</div>
+								
+							</div>
+							{% block content %}{% endblock %}
+						</div>
+					</div>
+					<!-- end page title -->
+					
+				</div>
+			</div>
+			
+			{% include 'Website/layouts/footer.html' %}
+		</div>
+	</div>
+	
+	<script src="{% static 'assets/libs/jquery/jquery.min.js' %}"></script>
+	<script src="{% static 'assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'assets/libs/metismenu/metisMenu.min.js' %}"></script>
+	<script src="{% static 'assets/libs/simplebar/simplebar.min.js' %}"></script>
+	<script src="{% static 'assets/libs/node-waves/waves.min.js' %}"></script>
+	<script src="{% static 'assets/libs/sweetalert2/sweetalert2.min.js' %}"></script>
+	<script src="{% static 'assets/js/pages/sweet-alerts.init.js' %}"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+
+	<!-- Datatable init js -->
+	<script src="{% static 'assets/libs/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+	<script src="{% static 'assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js' %}"></script>
+	<script src="{% static 'assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js' %}"></script>
+	<script src="{% static 'assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js' %}"></script>
+
+	<script src="{% static 'assets/js/app.js' %}"></script>
+	<script type="module" src="{% static 'js/website/header.js' %}"></script>
+
+	<script>
+		var ws_scheme = window.location.protocol =="https:" ?"wss" :"ws";
+		var web_socket_url;
+		if (location.hostname ==="localhost" || location.hostname ==="127.0.0.1") {
+			var web_socket_url = window.location.host;
+		}
+		else 
+		{
+			var web_socket_url = window.location.host+":8000"
+		}
+	</script>
+
+	{% block customScripts %}{% endblock %}
+</body>
+</html>
