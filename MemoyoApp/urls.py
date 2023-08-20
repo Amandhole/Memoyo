@@ -7,6 +7,8 @@ from django.conf.urls.static import static
 
 web_urls = [
 	path('', index, name='index'),
+	path('registration/', registration, name='registration'),	# registration form
+	path('login/', login, name='login'),	# login form
 ]
 
 ajax_urls = [
