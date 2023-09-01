@@ -159,6 +159,7 @@ export async function checkAllCheckBoxes(_this, check_class, table_id)
 
 export function showToastMsg(title, message, type='error')
 {
+
 	if (type == 'error')
 	{
 		iziToast.error({

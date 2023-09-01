@@ -1,0 +1,730 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html xml:lang="en-US" lang="en-US">
+
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>Animation website</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'js/website/assets/css/style.css' %}">
+
+    <!-- Reponsive -->
+    <link rel="stylesheet" type="text/css" href="{% static 'js/website/assets/css/responsive.css' %}">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="{% static 'js/website/assets/icon/Favicon.png' %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'js/website/assets/icon/logo.png' %}">
+
+</head>
+<style type="text/css">
+    .youtube-container {
+    
+    pointer-events: none;
+    }
+   
+</style>
+
+<body class="body background-white">
+
+
+        
+    <div id="wrapper">
+        <div id="page" class="pt-40">
+
+            <header id="header_main" class="header_1 header-fixed style-white">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-md-12">                              
+                            <div id="site-header-inner"> 
+                                <div class="wrap-box flex">
+                                    <div id="site-logo">
+                                        <div id="site-logo-inner">
+                                            <a href="#" rel="home" class="main-logo">
+                                                <img id="logo_header" src="{% static 'js/website/assets/images/logo/memoyologo.gif' %}" >
+                                                {% comment %} <img id="logo_header" src="{% static 'js/website/assets/images/logo/logo.png' %}" > {% endcomment %}
+                                            </a>
+                                        </div>
+                                    </div><!-- logo -->
+                                    <div class="mobile-button">
+                                        <span></span>
+                                    </div><!-- /.mobile-button -->
+                                    <nav id="main-nav" class="main-nav">
+                                        <ul id="menu-primary-menu" class="menu">
+                                            <li class="menu-item menu-item-has-children current-menu-item">
+                                                <a>Home</a>
+                                               
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="#">About us</a>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a>Explore</a>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a>Pages</a>
+                                                
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a>Blog</a>
+                                                
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="#">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav><!-- /#main-nav -->
+                                    <div class="flat-wallet flex">
+                                        <div class="" id="wallet-header">
+                                            <a  href="{% url 'login' %}" id="connectbtn" class="tf-button style-1">
+                                                <span>Login</span>
+                                                
+                                            </a>
+                                        </div>
+                                        <div class="canvas style-1">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+             
+            </header>
+
+            <div class="flat-pages-title-home5 relative has-slider">
+                <div class="themesflat-container w1230">
+                    <div class="row">
+                        <div class="col-12 pages-title">
+                            <div class="content">
+                                <h1 data-wow-delay="0s" class="wow fadeInUp">Discover the Animations<br> for worldwid creators</h1>
+                                <p data-wow-delay="0.1s" class="wow fadeInUp">Buy and sell animo from the world’s top artists</p>
+                              
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="swiper-container swiper-rotate-3" data-swiper='{
+                                "loop": true,
+                                "spaceBetween": 53,
+                                "slidesPerView": 1,
+                                "centeredSlides": true,
+                                "freeMode": true,
+                                "watchSlidesProgress": true,
+                                "observer": true,
+                                "observeParents": true,
+                                "breakpoints": {
+                                    "500": {
+                                        "slidesPerView": 2
+                                    },
+                                    "1024": {
+                                        "slidesPerView": 3
+                                    }
+                                }
+                            }'>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-box style-2 type-1">
+                                            <div class="card-media">
+                                                <a href="#">
+                                                    <img src="{% static 'js/website/assets/images/box-item/banner-16.jpg' %}" alt="">
+                                                </a>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-box style-2 type-1">
+                                            <div class="card-media">
+                                                <a href="#">
+                                                    <img src="{% static 'js/website/assets/images/box-item/banner-17.jpg' %}" alt="">
+                                                </a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-box style-2 type-1">
+                                            <div class="card-media">
+                                                <a href="#">
+                                                    <img src="{% static 'js/website/assets/images/box-item/banner-18.jpg' %}" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    
+            <div class="tf-section-1 featured-item">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-section pb-20">
+                                <h2 class="tf-title ">Featured Item</h2>
+                                <a href="#" class="">Discover more <i class="icon-arrow-right2"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="featured pt-10 swiper-container carousel" data-swiper='{
+                                "loop":false,
+                                "slidesPerView": 1,
+                                "observer": true,
+                                "observeParents": true,
+                                "spaceBetween": 30,
+                                "navigation": {
+                                    "clickable": true,
+                                    "nextEl": ".slider-next",
+                                    "prevEl": ".slider-prev"
+                                },
+                                "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "clickable": true
+                                },
+                                "breakpoints": {
+                                    "768": {
+                                        "slidesPerView": 2,
+                                        "spaceBetween": 30
+                                    },
+                                    "1024": {
+                                        "slidesPerView": 3,
+                                        "spaceBetween": 30
+                                    },
+                                    "1300": {
+                                        "slidesPerView": 4,
+                                        "spaceBetween": 30
+                                    }
+                                }
+                            }'>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-box style-1 bg-white">
+                                            <div class="card-media">
+                                                <a href="#">
+                                                   <iframe width="235" height="244" src="https://www.youtube.com/embed/TjJLIuFKA20?autoplay=1&showinfo=0" title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe>
+                                                </a>
+                                                <span class="wishlist-button icon-heart"></span>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-box style-1 bg-white">
+                                            <div class="card-media">
+                                                <a href="#">
+                                                    <iframe width="235" height="244" src="https://www.youtube.com/embed/TjJLIuFKA20?autoplay=1&showinfo=0" title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe>
+                                                </a>
+                                                <span class="wishlist-button icon-heart"></span>
+                                                
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-box style-1 bg-white">
+                                            <div class="card-media">
+                                                <a href="#">
+                                                   <iframe width="235" height="244" src="https://www.youtube.com/embed/TjJLIuFKA20?autoplay=1&showinfo=0" title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe>
+                                                </a>
+                                                <span class="wishlist-button icon-heart"></span>
+                                                
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-box style-1 bg-white">
+                                            <div class="card-media">
+                                                <a href="#">
+                                                  
+                                                   
+
+                                                   <iframe width="235" height="244" src="https://www.youtube.com/embed/TjJLIuFKA20?autoplay=1&showinfo=0" title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe>
+                                                    
+                                                </a>
+                                                <span class="wishlist-button icon-heart"></span>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-box style-1 bg-white">
+                                            <div class="card-media">
+                                                <a href="#">
+                                                   <iframe width="235" height="244" src="https://www.youtube.com/embed/TjJLIuFKA20?autoplay=1&showinfo=0" title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe>
+                                                </a>
+                                                <span class="wishlist-button icon-heart"></span>
+                                               
+                                            </div>
+ 
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-box style-1 bg-white">
+                                            <div class="card-media">
+                                                <a href="#">
+                                                    <iframe width="235" height="244" src="https://www.youtube.com/embed/TjJLIuFKA20?autoplay=1&showinfo=0" title="YouTube video player" frameborder="0" allow="" allowfullscreen></iframe>
+                                                </a>
+                                                <span class="wishlist-button icon-heart"></span>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tf-section-3 discover-item  ">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                        </div>
+                        <div data-wow-delay="0s" class="wow fadeInUp col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tf-card-box style-1 bg-white">
+                                <div class="card-media">
+                                    <a href="#">
+                                        <img src="{% static 'js/website/assets/images/box-item/card-item-33.jpg' %}" alt="">
+                                    </a>
+                                    <span class="wishlist-button icon-heart"></span>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div data-wow-delay="0.1s" class="wow fadeInUp col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tf-card-box style-1 bg-white">
+                                <div class="card-media">
+                                    <a href="#">
+                                        <img src="{% static 'js/website/assets/images/box-item/card-item-34.jpg' %}" alt="">
+                                    </a>
+                                    <span class="wishlist-button icon-heart"></span>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div data-wow-delay="0.2s" class="wow fadeInUp col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tf-card-box style-1 bg-white">
+                                <div class="card-media">
+                                    <a href="#">
+                                        <img src="{% static 'js/website/assets/images/box-item/card-item-35.jpg' %}" alt="">
+                                    </a>
+                                    <span class="wishlist-button icon-heart"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-wow-delay="0.3s" class="wow fadeInUp col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tf-card-box style-1 bg-white">
+                                <div class="card-media">
+                                    <a href="#">
+                                        <img src="{% static 'js/website/assets/images/box-item/card-item-36.jpg' %}" alt="">
+                                    </a>
+                                    <span class="wishlist-button icon-heart"></span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div data-wow-delay="0s" class="wow fadeInUp col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tf-card-box style-1 bg-white">
+                                <div class="card-media">
+                                    <a href="#">
+                                        <img src="{% static 'js/website/assets/images/box-item/card-item-37.jpg' %}" alt="">
+                                    </a>
+                                    <span class="wishlist-button icon-heart"></span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div data-wow-delay="0.1s" class="wow fadeInUp col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tf-card-box style-1 bg-white">
+                                <div class="card-media">
+                                    <a href="#">
+                                        <img src="{% static 'js/website/assets/images/box-item/card-item-38.jpg' %}" alt="">
+                                    </a>
+                                    <span class="wishlist-button icon-heart"></span>
+                                    
+                                </div>
+                               
+                               
+                            </div>
+                        </div>
+                        <div data-wow-delay="0.2s" class="wow fadeInUp col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tf-card-box style-1 bg-white">
+                                <div class="card-media">
+                                    <a href="#">
+                                        <img src="{% static 'js/website/assets/images/box-item/card-item-34.jpg' %}" alt="">
+                                    </a>
+                                    <span class="wishlist-button icon-heart"></span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div data-wow-delay="0.3s" class="wow fadeInUp col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tf-card-box style-1 bg-white">
+                                <div class="card-media">
+                                    <a href="#">
+                                        <img src="{% static 'js/website/assets/images/box-item/card-item-35.jpg' %}" alt="">
+                                    </a>
+                                    <span class="wishlist-button icon-heart"></span>
+                                   
+                                </div>
+                               
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>           
+        
+            <div class="tf-section top-collections">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-section pb-20">
+                                <h2 class="tf-title ">Top collections in week</h2>
+                                <a href="#" class="">Discover more <i class="icon-arrow-right2"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="featured pt-10 swiper-container carousel3" data-swiper='{
+                                "loop":false,
+                                "slidesPerView": 1,
+                                "spaceBetween": 30,
+                                "observer": true,
+                                "observeParents": true,
+                                "breakpoints": {
+                                    "600": {
+                                        "slidesPerView": 2
+                                    },
+                                    "991": {
+                                        "slidesPerView": 3
+                                    }
+                                }
+                            }'>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-collection bg-white">
+                                            <a href="#">
+                                                <div class="media-images-collection">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-17.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-18.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-19.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-20.jpg' %}" alt="">
+                                                    <div class="author-poster">
+                                                        <img src="{% static 'js/website/assets/images/avatar/avatar-01.png' %}" alt="">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-bottom">
+                                                <div class="author">
+                                                    <h5><a href="#">Bored ape#21</a></h5>
+                                                    <div class="infor">@jawwad</div>
+                                                </div>
+                                                <div class="bottom-right">
+                                                    <div class="shop"> 
+                                                        <div class="icon">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M16.875 6.25L16.3542 15.11C16.3261 15.5875 16.1166 16.0363 15.7685 16.3644C15.4204 16.6925 14.96 16.8752 14.4817 16.875H5.51833C5.03997 16.8752 4.57962 16.6925 4.23152 16.3644C3.88342 16.0363 3.6739 15.5875 3.64583 15.11L3.125 6.25M8.33333 9.375H11.6667M2.8125 6.25H17.1875C17.705 6.25 18.125 5.83 18.125 5.3125V4.0625C18.125 3.545 17.705 3.125 17.1875 3.125H2.8125C2.295 3.125 1.875 3.545 1.875 4.0625V5.3125C1.875 5.83 2.295 6.25 2.8125 6.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p>12 Item</p>
+                                                    </div>
+                                                    <div class="like">
+                                                        <span class="wishlist-button icon-heart"></span>
+                                                        <p>97 like</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-collection bg-white">
+                                            <a href="#">
+                                                <div class="media-images-collection">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-21.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-22.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-23.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-24.jpg' %}" alt="">
+                                                    <div class="author-poster">
+                                                        <img src="{% static 'js/website/assets/images/avatar/avatar-01.png' %}" alt="">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-bottom">
+                                                <div class="author">
+                                                    <h5><a href="#">Bored ape#21</a></h5>
+                                                    <div class="infor">@jawwad</div>
+                                                </div>
+                                                <div class="bottom-right">
+                                                    <div class="shop"> 
+                                                        <div class="icon">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M16.875 6.25L16.3542 15.11C16.3261 15.5875 16.1166 16.0363 15.7685 16.3644C15.4204 16.6925 14.96 16.8752 14.4817 16.875H5.51833C5.03997 16.8752 4.57962 16.6925 4.23152 16.3644C3.88342 16.0363 3.6739 15.5875 3.64583 15.11L3.125 6.25M8.33333 9.375H11.6667M2.8125 6.25H17.1875C17.705 6.25 18.125 5.83 18.125 5.3125V4.0625C18.125 3.545 17.705 3.125 17.1875 3.125H2.8125C2.295 3.125 1.875 3.545 1.875 4.0625V5.3125C1.875 5.83 2.295 6.25 2.8125 6.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p>12 Item</p>
+                                                    </div>
+                                                    <div class="like">
+                                                        <span class="wishlist-button icon-heart"></span>
+                                                        <p>97 like</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-collection bg-white">
+                                            <a href="#">
+                                                <div class="media-images-collection">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-25.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-26.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-27.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-28.jpg' %}" alt="">
+                                                    <div class="author-poster">
+                                                        <img src="{% static 'js/website/assets/images/avatar/avatar-01.png' %}" alt="">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-bottom">
+                                                <div class="author">
+                                                    <h5><a href="#">Bored ape#21</a></h5>
+                                                    <div class="infor">@jawwad</div>
+                                                </div>
+                                                <div class="bottom-right">
+                                                    <div class="shop"> 
+                                                        <div class="icon">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M16.875 6.25L16.3542 15.11C16.3261 15.5875 16.1166 16.0363 15.7685 16.3644C15.4204 16.6925 14.96 16.8752 14.4817 16.875H5.51833C5.03997 16.8752 4.57962 16.6925 4.23152 16.3644C3.88342 16.0363 3.6739 15.5875 3.64583 15.11L3.125 6.25M8.33333 9.375H11.6667M2.8125 6.25H17.1875C17.705 6.25 18.125 5.83 18.125 5.3125V4.0625C18.125 3.545 17.705 3.125 17.1875 3.125H2.8125C2.295 3.125 1.875 3.545 1.875 4.0625V5.3125C1.875 5.83 2.295 6.25 2.8125 6.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p>12 Item</p>
+                                                    </div>
+                                                    <div class="like">
+                                                        <span class="wishlist-button icon-heart"></span>
+                                                        <p>97 like</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-collection bg-white">
+                                            <a href="#">
+                                                <div class="media-images-collection">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-17.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-18.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-19.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-20.jpg' %}" alt="">
+                                                    <div class="author-poster">
+                                                        <img src="{% static 'js/website/assets/images/avatar/avatar-01.png' %}" alt="">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-bottom">
+                                                <div class="author">
+                                                    <h5><a href="#">Bored ape#21</a></h5>
+                                                    <div class="infor">@jawwad</div>
+                                                </div>
+                                                <div class="bottom-right">
+                                                    <div class="shop"> 
+                                                        <div class="icon">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M16.875 6.25L16.3542 15.11C16.3261 15.5875 16.1166 16.0363 15.7685 16.3644C15.4204 16.6925 14.96 16.8752 14.4817 16.875H5.51833C5.03997 16.8752 4.57962 16.6925 4.23152 16.3644C3.88342 16.0363 3.6739 15.5875 3.64583 15.11L3.125 6.25M8.33333 9.375H11.6667M2.8125 6.25H17.1875C17.705 6.25 18.125 5.83 18.125 5.3125V4.0625C18.125 3.545 17.705 3.125 17.1875 3.125H2.8125C2.295 3.125 1.875 3.545 1.875 4.0625V5.3125C1.875 5.83 2.295 6.25 2.8125 6.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p>12 Item</p>
+                                                    </div>
+                                                    <div class="like">
+                                                        <span class="wishlist-button icon-heart"></span>
+                                                        <p>97 like</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="tf-card-collection bg-white">
+                                            <a href="#">
+                                                <div class="media-images-collection">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-17.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-18.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-19.jpg' %}" alt="">
+                                                    <img src="{% static 'js/website/assets/images/box-item/img-collection-20.jpg' %}" alt="">
+                                                    <div class="author-poster">
+                                                        <img src="{% static 'js/website/assets/images/avatar/avatar-01.png' %}" alt="">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="card-bottom">
+                                                <div class="author">
+                                                    <h5><a href="#">Bored ape#21</a></h5>
+                                                    <div class="infor">@jawwad</div>
+                                                </div>
+                                                <div class="bottom-right">
+                                                    <div class="shop"> 
+                                                        <div class="icon">
+                                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M16.875 6.25L16.3542 15.11C16.3261 15.5875 16.1166 16.0363 15.7685 16.3644C15.4204 16.6925 14.96 16.8752 14.4817 16.875H5.51833C5.03997 16.8752 4.57962 16.6925 4.23152 16.3644C3.88342 16.0363 3.6739 15.5875 3.64583 15.11L3.125 6.25M8.33333 9.375H11.6667M2.8125 6.25H17.1875C17.705 6.25 18.125 5.83 18.125 5.3125V4.0625C18.125 3.545 17.705 3.125 17.1875 3.125H2.8125C2.295 3.125 1.875 3.545 1.875 4.0625V5.3125C1.875 5.83 2.295 6.25 2.8125 6.25Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <p>12 Item</p>
+                                                    </div>
+                                                    <div class="like">
+                                                        <span class="wishlist-button icon-heart"></span>
+                                                        <p>97 like</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tf-section action">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="action__body bg-white">
+                                <div class="tf-tsparticles">
+                                        <div id="tsparticles1" data-color="#161616" data-line="#000"></div>
+                                    </div>
+                                <h2 class="text-center capitalize mx-auto mw-667">Join the world’s largest nFT community 
+                                 start collecting Animation</h2>
+                                <div class="flat-button flex justify-center">
+                                    <a href="#" class="tf-button style-2 h50 w190">Explore now<i class="icon-arrow-up-right2"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer" class="bg-white">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer-content flex flex-grow">
+                                <div class="widget-logo flex-grow">
+                                    <div class="logo-footer" id="logo-footer">
+                                        <a href="#">
+                                            <img id="logo.png' %}" src="{% static 'js/website/assets/images/logo/logo.png' %}" 
+                                            data-retina="{% static 'js/website/assets/images/logo/logo-dark@2x.png' %}">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="widget widget-menu style-1">
+                                    <h5 class="title-widget">Marketplace</h5>
+                                    <ul>
+                                        <li><a href="#">All Animation</a></li>
+                                        <li><a href="#">New</a></li>
+                                        <li><a href="#">Art</a></li>
+                                        <li><a href="#">Music</a></li>
+                                        <li><a href="#">Domain names</a></li>
+                                        <li><a href="#">Virtual worlds</a></li>
+                                    </ul>
+                                </div>
+                                <div class="widget widget-menu style-2">
+                                    <h5 class="title-widget">Resources</h5>
+                                    <ul>
+                                        <li><a href="#">Help center</a></li>
+                                        <li><a href="#">Platform status</a></li>
+                                        <li><a href="#">Partners</a></li>
+                                        <li><a href="#">Discount communiti</a></li>
+                                        <li><a href="#">Suggestions</a></li>
+                                        <li><a href="#">User Content FAQs</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Doc</a></li>
+                                    </ul>
+                                </div>
+                                <div class="widget-last">
+                                    <div class="widget-menu style-4">
+                                        <h5 class="title-widget">Company</h5>
+                                        <ul>
+                                            <li><a href="#">Help center</a></li>
+                                            <li><a href="#">Platform status</a></li>
+                                        </ul>
+                                    </div>
+                                    <h5 class="title-widget mt-30">Join the community</h5>
+                                    <div class="widget-social">
+                                        <ul class="flex">
+                                            <li><a href="#" class="icon-facebook"></a></li>
+                                            <li><a href="#" class="icon-twitter"></a></li>
+                                            <li><a href="#" class="icon-vt"></a></li>
+                                            <li><a href="#" class="icon-tiktok"></a></li>
+                                            <li><a href="#" class="icon-youtube"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>© 2023 Animation - Made By Jawwad Khan</p>
+                        <ul class="flex">
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer><!-- /#footer -->
+
+        </div>
+       
+
+       
+
+    </div>
+      <!-- /#wrapper -->
+
+    <div class="tf-mouse tf-mouse-outer"></div>
+    <div class="tf-mouse tf-mouse-inner"></div>
+
+    <div class="progress-wrap active-progress">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 286.138;"></path>
+        </svg>
+    </div>
+
+    <!-- Javascript -->
+    <script src="{% static 'js/website/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/swiper.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/count-down.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/simpleParallax.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/gsap.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/SplitText.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/ScrollTrigger.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/gsap-animation.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/tsparticles.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/tsparticles.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/main.js' %}"></script>
+
+</body>
+
+
+</html>

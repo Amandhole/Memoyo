@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 from MemoyoApp.managers import MyCustomManager
 
 class MyUser(AbstractBaseUser,PermissionsMixin):
-    email = models.EmailField(max_length=300, unique=True)
+    email = models.EmailField(max_length=200, unique=True)
     password = models.CharField(max_length=200,blank=True,null=True)
     is_staff = models.BooleanField(default=False)
     USERNAME_FIELD = 'email'
@@ -32,3 +32,4 @@ class UserDetails(models.Model):
     social_1 = models.URLField(blank=True, null=True)
     social_2 = models.URLField(blank=True, null=True)
     social_3 = models.URLField(blank=True, null=True)
+

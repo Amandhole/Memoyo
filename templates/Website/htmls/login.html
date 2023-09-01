@@ -1,202 +1,153 @@
 {% load static %}
+<!DOCTYPE html>
 
-<!doctype html>
-<html lang="en">
+<html xml:lang="en-US" lang="en-US">
 
-    <head>
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <title>Animation website</title>
+
+    <meta name="author" content="themesflat.com">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="{% static 'js/website/assets/css/style.css' %}">
+
+    <!-- Reponsive -->
+    <link rel="stylesheet" type="text/css" href="{% static 'js/website/assets/css/responsive.css' %}">
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="{% static 'js/website/assets/icon/Favicon.png' %}">
+    <link rel="apple-touch-icon-precomposed" href="{% static 'js/website/assets/icon/logo.png' %}">
+
+</head>
+<style type="text/css">
+    .youtube-container {
+    
+    pointer-events: none;
+    }
+   
+</style>
+
+<body class="body background-white">
+
+    
         
-        <meta charset="utf-8" />
-        <title>MEMOYO - LOGIN</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
-        <meta content="Themesbrand" name="author" />
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="{% static 'assets/images/favicon.ico' %}">
+    <div id="wrapper">
+        <div id="page" class="pt-40">
 
-        <!-- owl.carousel css -->
-        <link rel="stylesheet" href="{% static 'assets/libs/owl.carousel/assets/owl.carousel.min.css' %}">
-
-        <link rel="stylesheet" href="{% static 'assets/libs/owl.carousel/assets/owl.theme.default.min.css' %}">
-
-        <!-- Bootstrap Css -->
-        <link href="{% static 'assets/css/bootstrap.min.css' %}" id="bootstrap-style" rel="stylesheet" type="text/css" />
-        <!-- Icons Css -->
-        <link href="{% static 'assets/css/icons.min.css' %}" rel="stylesheet" type="text/css" />
-        <!-- App Css-->
-        <link href="{% static 'assets/css/app.min.css' %}" id="app-style" rel="stylesheet" type="text/css" />
-
-    </head>
-
-    <body class="auth-body-bg">
-        
-        <div>
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    
-                    <div class="col-xl-9">
-                        <div class="auth-full-bg pt-lg-5 p-4">
-                            <div class="w-100">
-                                <div class="bg-overlay"></div>
-                                <div class="d-flex h-100 flex-column">
-    
-                                    <div class="p-4 mt-auto">
-                                        <div class="row justify-content-center">
-                                            <div class="col-lg-7">
-                                                <div class="text-center">
-                                                    
-                                                    <h4 class="mb-3"><i class="bx bxs-quote-alt-left text-primary h1 align-middle me-3"></i><span class="text-primary">5k</span>+ Satisfied clients</h4>
-                                                    
-                                                    <div dir="ltr">
-                                                        <div class="owl-carousel owl-theme auth-review-carousel" id="auth-review-carousel">
-                                                            <div class="item">
-                                                                <div class="py-3">
-                                                                    <p class="font-size-16 mb-4">" Fantastic theme with a ton of options. If you just want the HTML to integrate with your project, then this is the package. You can find the files in the 'dist' folder...no need to install git and all the other stuff the documentation talks about. "</p>
-    
-                                                                    <div>
-                                                                        <h4 class="font-size-16 text-primary">Abs1981</h4>
-                                                                        <p class="font-size-14 mb-0">- MEMOYO User</p>
-                                                                    </div>
-                                                                </div>
-                                                                
-                                                            </div>
-    
-                                                            <div class="item">
-                                                                <div class="py-3">
-                                                                    <p class="font-size-16 mb-4">" If Every Vendor on Envato are as supportive as Themesbrand, Development with be a nice experience. You guys are Wonderful. Keep us the good work. "</p>
-    
-                                                                    <div>
-                                                                        <h4 class="font-size-16 text-primary">nezerious</h4>
-                                                                        <p class="font-size-14 mb-0">- MEMOYO User</p>
-                                                                    </div>
-                                                                </div>
-                                                                
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- end col -->
-
-                    <div class="col-xl-3">
-                        <div class="auth-full-page-content p-md-5 p-4">
-                            <div class="w-100">
-
-                                <div class="d-flex flex-column h-100">
-                                    <div class="mb-4 mb-md-5">
-                                        <a href="/" class="d-block auth-logo">
-                                            <!-- <img src="{% static 'assets/images/logo-dark.png' %}" alt="" height="18" class="auth-logo-dark">
-                                            <img src="{% static 'assets/images/logo-light.png' %}" alt="" height="18" class="auth-logo-light"> -->
-                                            MEMOYO
-                                        </a>
-                                    </div>
-                                    <div class="my-auto">
-                                        
-                                        <div>
-                                            <h5 class="text-primary">Welcome Back !</h5>
-                                            <p class="text-muted">Sign in to continue to MEMOYO.</p>
-                                        </div>
             
-                                        <div class="mt-4">
-                                            <form class="needs-validation" novalidate action="#">
-                                                <div class="mb-3">
-                                                    <label for="name" class="form-label">Login<span style="color: red;">*</span></label>
-                                                    <input type="text" class="form-control" id="name" placeholder="Enter Username or E-mail" required>
-                                                    <div class="invalid-feedback">
-                                                        Please Enter Username or E-mail
-                                                    </div>  
-                                                </div>
-                        
-                                                <div class="mb-3">
-                                                    <div class="float-end">
-                                                        <a href="auth-recoverpw-2.html" class="text-muted">Forgot password?</a>
-                                                    </div>
-                                                    <label for="password" class="form-label">Password<span style="color: red;">*</span></label>
-                                                    <input type="password" class="form-control" id="password" placeholder="Enter password" required>
-                                                    <div class="invalid-feedback">
-                                                        Please Enter Password
-                                                    </div>   
-                                                </div>
-                        
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="remember-check">
-                                                    <label class="form-check-label" for="remember-check">
-                                                        Remember me
-                                                    </label>
-                                                </div>
-                                                
-                                                <div class="mt-3 d-grid">
-                                                    <button class="btn btn-primary waves-effect waves-light" type="submit">Log In</button>
-                                                </div>
-                    
-                                                
-                                                <div class="mt-4 text-center">
-                                                    <h5 class="font-size-14 mb-3">Sign in with</h5>
-                    
-                                                    <ul class="list-inline">
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript::void()" class="social-list-item bg-primary text-white border-primary">
-                                                                <i class="mdi mdi-facebook"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript::void()" class="social-list-item bg-info text-white border-info">
-                                                                <i class="mdi mdi-twitter"></i>
-                                                            </a>
-                                                        </li>
-                                                        <li class="list-inline-item">
-                                                            <a href="javascript::void()" class="social-list-item bg-danger text-white border-danger">
-                                                                <i class="mdi mdi-google"></i>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
 
-                                            </form>
-                                            <div class="mt-5 text-center">
-                                                <p>Don't have an account ? <a href="/registration/" class="fw-medium text-primary"> Signup now </a> </p>
-                                            </div>
-                                        </div>
-                                    </div>
+            <div class="flat-pages-title-home5 relative has-slider">
+                <div class="themesflat-container w1230">
+                    <div class="row">
+                        <div class="col-12 pages-title">
+                            <div class="content">
+                                <h1 data-wow-delay="0s" class="wow fadeInUp">Discover the Animations<br> for worldwid creators</h1>
+                                <p data-wow-delay="0.1s" class="wow fadeInUp">Hello Again! We're Thrilled to See You!</p>
+                              
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
 
-                                    <div class="mt-4 mt-md-5 text-center">
-                                        <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> Crafted by MEMOYO</p>
-                                    </div>
-                                </div>
+    
+            
+
+            <div class="tf-section-3 discover-item  ">
+                <div class="themesflat-container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                        </div>
+                        
+                        
+                        <div data-wow-delay="0.2s" class="wow fadeInUp col-xl-12 col-lg-4 col-md-6 col-sm-6">
+                            <div class="tf-card-box style-1 bg-white">
+                                <div class="card-media">
+                                    <a href="#">
+                                        <img style="width: 100%;" src="{% static 'js/website/assets/images/box-item/card-item-35.jpg' %}" alt="">
+                                    </a>
                                 
+
+
+                                    <h1>paste here login form</h1>
+
+                                   
+                                    {% comment %} past code above {% endcomment %}
+                                    <span class="wishlist-button icon-heart"></span>
+                                </div>
                                 
                             </div>
                         </div>
+                    
                     </div>
-                    <!-- end col -->
                 </div>
-                <!-- end row -->
-            </div>
-            <!-- end container-fluid -->
-        </div>
-
-        <!-- JAVASCRIPT -->
-        <script src="{% static 'assets/libs/jquery/jquery.min.js' %}"></script>
-        <script src="{% static 'assets/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-        <script src="{% static 'assets/libs/metismenu/metisMenu.min.js' %}"></script>
-        <script src="{% static 'assets/libs/simplebar/simplebar.min.js' %}"></script>
-        <script src="{% static 'assets/libs/node-waves/waves.min.js' %}"></script>
-
-        <!-- owl.carousel js -->
-        <script src="{% static 'assets/libs/owl.carousel/owl.carousel.min.js' %}"></script>
-
-        <!-- auth-2-carousel init -->
-        <script src="{% static 'assets/js/pages/auth-2-carousel.init.js' %}"></script>
+            </div>           
         
-        <!-- App js -->
-        <script src="{% static 'assets/js/app.js' %}"></script>
+            
+            
+            
 
-        <script type="module" src="{% static 'js/website/login.js' %}"></script>
+            <!-- Footer -->
+            <footer id="footer" class="bg-white">
+                <div class="themesflat-container">
+                    
+                    <div class="footer-bottom">
+                        <p>© 2023 Animation - Made By Aman Dhole</p>
+                        <ul class="flex">
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms of Service</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer><!-- /#footer -->
 
-    </body>
+        </div>
+       
+
+       
+
+    </div>
+      <!-- /#wrapper -->
+
+    <div class="tf-mouse tf-mouse-outer"></div>
+    <div class="tf-mouse tf-mouse-inner"></div>
+
+    <div class="progress-wrap active-progress">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 286.138;"></path>
+        </svg>
+    </div>
+
+    <!-- Javascript -->
+    <script src="{% static 'js/website/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/swiper.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/count-down.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/simpleParallax.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/gsap.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/SplitText.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/ScrollTrigger.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/gsap-animation.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/tsparticles.min.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/tsparticles.js' %}"></script>
+    <script src="{% static 'js/website/assets/js/main.js' %}"></script>
+
+</body>
+
+
 </html>

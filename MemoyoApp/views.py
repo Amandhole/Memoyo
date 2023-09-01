@@ -1,14 +1,15 @@
 from django.shortcuts import render
+from django.views.decorators.cache import cache_control
+from ProjectUtilities.decorators import *
 
-# Create your views here.
-
-def index(request):
-    return render(request, 'Website/htmls/index.html')
-
-# registration form
-def registration(request):
-    return render(request, 'Website/htmls/registration.html')
+@cache_control(no_cache=True, must_revalidate=True, no_store=True)
+def LandingPage(request):
+    user = is_authenticated(request)
+    if user:
+        return redirect('index')
+    else:
+        return render(request, 'Website/htmls/landing.html')
 
 # login form
-def login(request):
-    return render(request, 'Website/htmls/login.html')
+def Login(request):
+    return render(request, 'Website/Htmls/login.html')

@@ -1,23 +1,26 @@
 import traceback
 from django.shortcuts import render, redirect
-from AlgoEdge_App.models import UserDetails
+from MemoyoApp.models import MyUser
 from django.http import HttpResponse, JsonResponse
 from django.core.exceptions import ObjectDoesNotExist
 
 
 ### check request is authenticated or not 
+
 def is_authenticated(request):
-    try:
-        username = request.session.get('username')
-        user_id = request.session.get('user_id')
-        if username and user_id:
-            user = UserDetails.objects.get(id=user_id)
-            return user
-        else:
-            return None
-    except:
-        traceback.print_exc()
-    return None
+	try:
+		session_id = request.session.get('userid')
+		if session_id is not None:
+			user = MyUser.objects.filter(id=session_id).exists()
+			print('checking user user exist or not..........', user)
+			return user
+		else:
+			return False
+	except Exception as e:
+		traceback.print_exc()
+		return False
+
+
 
 def handle_page_exception(func):
 	'''Function template to handle POST request and handle exceptions...'''
